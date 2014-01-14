@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jobboardApp', [])
+angular.module('jobboardApp', ['ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
