@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('jobboardApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('OrganizerCtrl', function ($scope, $http) {
     // $scope.awesomeThings = [
     //   'HTML5 Boilerplate',
     //   'AngularJS',

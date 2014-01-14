@@ -26,6 +26,19 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
+
+    <div class="table-of-contents">
+      <ul>
+        <li><a href="#/seeker">Job Seeker Dashboard</a></li>
+        <li><a href="#/provider">Job Provider Dashboard</a></li>
+        <li><a href="#/event-organizer">Event Organizer Dashboard</a></li>
+      </ul>
+    </div>
+
+    <header>
+      <h1><a href="#/">VCF</a></h1>
+    </header>
+
     <div class="container" ng-view=""></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -70,6 +83,10 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/events.js"></script>
+        <script src="scripts/controllers/seeker.js"></script>
+        <script src="scripts/controllers/provider.js"></script>
+        <script src="scripts/controllers/organizer.js"></script>
         <!-- endbuild -->
 </body>
 </html>
