@@ -1,0 +1,30 @@
+'use strict';
+
+var app = angular.module('jobboardApp', []);
+
+app.factory('JobList', function () {
+  var JobList = {};
+
+  JobList.jobs = [
+    {
+      "title" : "thrill seeker",
+      "city" : "baton rouge",
+      "state" : "louisiana",
+      "description" : "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod."
+    },
+    {
+      "title" : "Lounge Lizard",
+      "city" : "Nashville",
+      "state" : "tennessee",
+      "description" : "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod."
+    },
+    {
+      "title" : "Lazy Susan",
+      "city" : "greenville",
+      "state" : "south carolina",
+      "description" : "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod."
+    }
+  ];
+
+  return JobList;
+});

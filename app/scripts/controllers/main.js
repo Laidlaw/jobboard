@@ -8,7 +8,7 @@ angular.module('jobboardApp')
     //   'Karma'
     // ];
 
-    $scope.url = 'jobs.json';
+    $scope.url = 'content/jobs.json';
     $scope.jobs = [];
 
     $scope.fetchJobs = function() {

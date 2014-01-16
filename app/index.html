@@ -37,6 +37,8 @@
 
     <header>
       <h1><a href="#/">VCF</a></h1>
+      <input class="submit btn-success btn btn-large pull-right" type="submit" value="Login">
+      <input class="submit btn-success btn btn-large pull-right" type="submit" value="Sign Up">
     </header>
 
     <div class="container" ng-view=""></div>
@@ -69,6 +71,7 @@
         <script src="bower_components/bootstrap-sass/js/scrollspy.js"></script>
         <script src="bower_components/bootstrap-sass/js/collapse.js"></script>
         <script src="bower_components/bootstrap-sass/js/tab.js"></script>
+        <script src="bower_components/selectize/dist/js/standalone/selectize.js"></script>
         <!-- // <script src="bower_components/angular-deckgrid/angular-deckgrid.js"></script> -->
         <!-- endbuild -->
 
@@ -82,11 +85,14 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <!-- // <script src="scripts/services.js"></script> -->
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/events.js"></script>
         <script src="scripts/controllers/seeker.js"></script>
         <script src="scripts/controllers/provider.js"></script>
         <script src="scripts/controllers/organizer.js"></script>
+
+        <script src="scripts/directives/autocomplete.js"></script>
         <!-- endbuild -->
 </body>
 </html>

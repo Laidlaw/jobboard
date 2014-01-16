@@ -1,0 +1,17 @@
+<div class="hero-unit">
+  <h1>Latest Jobs</h1>
+
+  <input type="text" placeholder="Job Title" ng-model="search.title">
+  <input type="text" placeholder="Pick a City" ng-model="search.city">
+</div>
+
+
+
+  <div class="well" ng-repeat="job in jobs | orderBy:'title' | filter:search">
+      <h4 class="panel-title">
+        <a >
+          {{job.title}}
+        </a>
+        <span class="pull-right">{{ job.city | uppercase }}</span>
+      </h4>
+  </div>

@@ -5,11 +5,11 @@ angular.module('jobboardApp', ['ngRoute'])
     $routeProvider
       .when('/', {
         templateUrl: 'views/seeker/signup.html',
-        controller: 'SignupCtrl'
+        controller: 'SeekerCtrl'
       })
       .when('/search', {
-        templateUrl: 'views/seeker/search.html',
-        controller: 'SignupCtrl'
+        templateUrl: 'views/seeker/search2.html',
+        controller: 'SearchCtrl'
       })
       .when('/jobs', {
         templateUrl: 'views/jobs.html',

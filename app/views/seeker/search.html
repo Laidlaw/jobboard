@@ -1,6 +1,53 @@
-<form class="form-search">
-<div class="input-append">
-<input type="text" class="span2 search-query">
-    <button type="submit" class="btn"><i class="glyphicon glyphicon-search"></i></button>
+<!--  <input auto-complete ui-items="names" ng-model="selected">
+        selected = {{selected}}
+<select name="" id="selectize" >
+  <option ng-repeat="job in jobs" value="{{ job.title }}">{{ job.title }}</option>
+</select> -->
+
+<select>
+    <option value="">Enter some tags...</option>
+    <optgroup label="Jobs">
+        <option ng-repeat="job in jobs" value="{{ job.title }}">{{ job.title }}</option>
+    </optgroup>
+</select>
+
+<div class="demo">
+        <div class="control-group">
+          <label for="input-tags">Tags:</label>
+          <input type="text" id="input-tags" class="demo-default" value="awesome,neat">
+        </div>
+        <script>
+          $('#input-tags').selectize({
+            delimiter: ',',
+            persist: false,
+            createOnBlur: true,
+            create: function(input) {
+              return {
+                value: input,
+                text: input
+              }
+            }
+          });
+        </script>
+      </div>
+
+<div class="demo">
+  <h2>Dynamic Options</h2>
+  <p>The options are created straight from an array.</p>
+  <div class="control-group">
+    <label for="select-tools">Tools:</label>
+    <select id="select-tools" placeholder="Pick a tool...">
+    </select>
+  </div>
+  <script>
+  // <select id="select-tools"></select>
+
+
+  </script>
 </div>
-</form>
+      <!--
+<div class="control-group">
+  <label for="select-beast">Job Title</label>
+  <select id="select-state" placeholder="pick a job...">
+    <option value="">Pick a job...</option>
+    <option ng-repeat="job in jobs" value="{{ job.title }}">{{ job.title }}</option> -->
